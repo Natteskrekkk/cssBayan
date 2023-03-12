@@ -1,0 +1,339 @@
+html {
+    font-size: 17px;
+}
+
+body {
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin: 3em;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+
+/* MAIN ------> */
+
+main {
+    background-color: #ffffff80;
+    padding: 2rem 4rem;
+    border-radius: 1em;
+}
+
+section {
+    width: 60vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1rem solid #ffffff90;
+    color: #ffffff;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section:hover .content {
+    opacity: 1;
+    height: auto;
+}
+
+
+#last-section {
+    padding-bottom: 0;
+}
+
+#first-section {
+    border-top: 0;
+}
+
+h2 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1.7rem;
+    transition: all .5s ease-in-out;
+}
+
+.button {
+    font-family: "Montserrat";
+    font-weight: 600;
+    transition: all .1s linear;
+}
+
+.plus-button {
+    margin-left: auto;
+}
+
+.hide-button {
+    font-size: 0rem;
+
+}
+
+.plus-button {
+    font-size: 0rem;
+}
+
+.meme-pic {
+    max-width: 20rem;
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+}
+
+label {
+    padding: 1.3em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Radio box -----> */
+input {
+    display: none;
+}
+
+input+label .content {
+    max-width: 0vh;
+    transition: all 1s ease-in-out;
+}
+
+input:checked+label .content {
+    max-width: 100vh;
+    transition: all .7s ease-in-out;
+    padding: 2em 0;
+}
+
+input:checked+label h2 {
+    color: #fbf83f;
+}
+
+
+
+input:checked+label .plus-button {
+    font-size: 0rem;
+    margin-left: auto;
+    transition: all .5s ease-in-out;
+}
+
+
+
+svg {
+    width: 1.7rem;
+    height: auto;
+    fill: #ffffff90;
+}
+
+footer {
+    height: 7em;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff90;
+    transition: all .1s ease-in-out;
+}
+
+a:active {
+    color: #3F5EFB;
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #ffffff90;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    main {
+        padding: 1rem 2rem;
+    }
+
+    section {
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 0.1rem solid #ffffff90;
+        color: #ffffff;
+    }
+
+    footer {
+        height: 12em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer p {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (hover: hover) {
+    main:active input:checked+label .plus-button {
+        margin-left: auto;
+        font-size: 0rem;
+        transition: all .5s ease-in-out;
+    }
+
+    main:active input:checked+label .hide-button {
+        font-size: 1.7rem;
+        transition: all .5s ease-in-out;
+    }
+
+    input:hover+label .content {
+        max-width: 100vh;
+        transition: all .7s ease-in-out;
+        padding: 2em 0;
+    }
+
+    main:hover .hide-button {
+
+        color: #fbf83f;
+        font-size: 0rem;
+        transition: all .5s ease-in-out;
+    }
+
+    main:hover .plus-button {
+        margin-left: auto;
+
+        color: #fbf83f;
+        font-size: 1.7rem;
+        transition: all .5s ease-in-out;
+    }
+
+    main:hover input:checked+label .hide-button {
+
+        font-size: 1.7rem;
+        transition: all .5s ease-in-out;
+    }
+
+    main:hover input:hover+label .hide-button {
+
+        font-size: 1.7em;
+        transition: all .5s ease-in-out;
+    }
+
+    main:hover input:hover+label .plus-button {
+        margin-left: auto;
+
+        font-size: 0rem;
+        transition: all .5s ease-in-out;
+    }
+
+    main:active input:hover+label .plus-button {
+        margin-left: auto;
+
+        font-size: 1.7rem;
+        transition: all .5s ease-in-out;
+    }
+
+    main:active input:hover+label .hide-button {
+
+        font-size: 0rem;
+        transition: all .5s ease-in-out;
+    }
+
+    label:hover {
+        cursor: pointer;
+    }
+
+    main:hover h2 {
+        cursor: pointer;
+        color: #fbf83f;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    section:active h2 {
+        color: #3F5EFB;
+        cursor: wait;
+    }
+
+    label:active {
+        color: #3F5EFB;
+        cursor: wait;
+    }
+
+    section:active .button {
+        color: #3F5EFB;
+    }
+
+    a:active {
+        color: #3F5EFB;
+    }
+
+    section:active input:checked+label h2 {
+        color: #3F5EFB;
+    }
+
+
+    label:active {
+        cursor: wait;
+    }
+
+    section:active h2 {
+        color: #3F5EFB;
+        cursor: wait;
+    }
+
+    section:active .button {
+        color: #3F5EFB;
+        font-size: 0;
+    }
+
+    section:active .content {
+        opacity: .4;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
