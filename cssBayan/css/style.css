@@ -1,5 +1,5 @@
 html {
-    font-size: 17px;
+    font-size: 1em;
 }
 
 body {
@@ -326,14 +326,14 @@ a:active {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
     html {
-        font-size: 19px;
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (min-width: 1200px) {
     html {
-        font-size: 18px;
+        font-size: 1.4rem;
     }
 }
